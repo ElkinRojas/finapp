@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewWord">
+
+    <TextView
+        android:id="@+id/txtTittle"
+        android:layout_width="382dp"
+        android:layout_height="69dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="383dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="4dp"
+        android:text="Mas Información"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtLink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtLink"
+        android:layout_width="386dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="4dp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtMean"
+        android:layout_width="372dp"
+        android:layout_height="199dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTittle"
+        app:layout_constraintVertical_bias="0.954" />
+
+    <ImageView
+        android:id="@+id/imageViewWord"
+        android:layout_width="255dp"
+        android:layout_height="291dp"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:onClick="clickZoomImage"
+        app:layout_constraintBottom_toTopOf="@+id/txtImageFoot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTittle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtImageFoot"
+        android:layout_width="362dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="16dp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtMean"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

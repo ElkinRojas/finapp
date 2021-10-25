@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="PERFIL DE INVERSIÓN">
+        <menu>
+            <item android:id="@+id/nav_item_one"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="Que es?"/>
+            <item android:id="@+id/nav_item_two"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Prueba perfil de inversión"/>
+        </menu>
+    </item>
+
+    <item android:title="ACCIONES">
+        <menu>
+            <item android:id="@+id/nav_item_three"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Que son?"/>
+            <item android:id="@+id/nav_item_four"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Tipos de acciones"/>
+            <item android:id="@+id/nav_item_five"
+                android:icon="@drawable/ic_launcher_background"
+                android:title="Recomendaciones"/>
+        </menu>
+    </item>
+
+    <item android:title="ANALISIS FUNDAMENTAL">
+        <menu>
+            <item android:id="@+id/nav_item_six"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Que es?"/>
+            <item android:id="@+id/nav_item_seven"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Para que sirve"/>
+            <item android:id="@+id/nav_item_eight"
+                android:icon="@drawable/ic_launcher_background"
+                android:title="Procedimiento"/>
+            <item android:id="@+id/nav_item_nine"
+                android:icon="@drawable/ic_launcher_background"
+                android:title="Lecturas"/>
+            <item android:id="@+id/nav_item_ten"
+                android:icon="@drawable/ic_launcher_background"
+                android:title="Quien lo hace?"/>
+        </menu>
+    </item>
+
+    <item android:title="ANALISIS TECNICO">
+        <menu>
+            <item android:id="@+id/nav_item_eleven"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Que es?"/>
+            <item android:id="@+id/nav_item_twenty"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Para que sirve"/>
+            <item android:id="@+id/nav_item_threeteen"
+                android:icon="@drawable/ic_launcher_background"
+                android:title="Metodologias"/>
+            <item android:id="@+id/nav_item_fourteen"
+                android:icon="@drawable/ic_launcher_background"
+                android:title="Ventajas"/>
+            <item android:id="@+id/nav_item_fiveteen"
+                android:icon="@drawable/ic_launcher_background"
+                android:title="Recomendaciones"/>
+        </menu>
+    </item>
+
+    <group>
+        <item android:id="@+id/nav_item_gra"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="GRAFFITI"/>
+        <item android:id="@+id/nav_item_glo"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="GLOSARIO"/>
+    </group>
+
+    <item android:title="PARA APRENDER">
+        <menu>
+            <item android:id="@+id/nav_item_sixteen"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Juego Selección"/>
+            <item android:id="@+id/nav_item_seventeen"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Preguntas"/>
+        </menu>
+    </item>
+</menu>
