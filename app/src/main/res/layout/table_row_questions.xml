@@ -6,8 +6,9 @@
     android:layout_height="match_parent">
 
     <TableRow
-        android:layout_width="394dp"
-        android:layout_height="77dp"
+        android:id="@+id/tbl_row_q"
+        android:layout_width="375dp"
+        android:layout_height="79dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -16,15 +17,15 @@
 
         <TextView
             android:id="@+id/txtQuestion"
-            android:layout_width="286dp"
+            android:layout_width="290dp"
             android:layout_height="match_parent" />
 
-        <EditText
-            android:id="@+id/txtAnswer"
-            android:layout_width="119dp"
+        <Button
+            android:id="@+id/btnCheck"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textAlignment="center" />
+            android:onClick="Check_question"
+            android:text="✓" />
+
     </TableRow>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -58,6 +58,12 @@ class MainPage : AppCompatActivity() {
             startActivity(Intent(this, SelectionPlay::class.java))
         }
 
+        if (item.itemId == R.id.nav_item_seventeen) {
+            var intent = Intent(this, ViewWord::class.java)
+            intent.putExtra("id", intent.getStringExtra("id").toString())
+            startActivity(intent)
+        }
+
         return super.onOptionsItemSelected(item)
     }
 }

@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Finapp2"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".FinanceProfile"
+            android:exported="true" />
+        <activity
             android:name=".SelectionPlay"
             android:exported="true" />
         <activity
