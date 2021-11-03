@@ -50,6 +50,13 @@ class MainPage : AppCompatActivity() {
             startActivity(intent)
         }
 
+        if (item.itemId == R.id.nav_item_two) {
+            val user = intent.getStringExtra("id").toString()
+            var intent = Intent(this, FinanceProfile::class.java)
+            intent.putExtra("user", user)
+            startActivity(intent)
+        }
+
         if (item.itemId == R.id.nav_item_glo) {
             startActivity(Intent(this, Glossary::class.java))
         }
