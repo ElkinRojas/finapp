@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FinanceProfile2">
+    tools:context=".QuestionPlay5">
 
     <TextView
-        android:id="@+id/txtQuestion2"
-        android:layout_width="323dp"
-        android:layout_height="86dp"
-        android:layout_marginBottom="24dp"
-        android:text="2. Su inversión se redujo un 20%, pero es parte de una cartera que se utiliza para cumplir con metas de inversión de tres diferentes horizontes temporales. ¿Qué haría usted si el objetivo era de cinco años? "
+        android:id="@+id/txtQPlay5"
+        android:layout_width="329dp"
+        android:layout_height="105dp"
+        android:layout_marginBottom="52dp"
+        android:text="5. Una buena oportunidad de inversión acaba de llegar. Pero usted tiene que pedir prestado el dinero para entrar, ¿sacaría usted un préstamo?"
         app:layout_constraintBottom_toTopOf="@+id/txtOption1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintHorizontal_bias="0.39"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -22,10 +22,33 @@
         android:layout_width="317dp"
         android:layout_height="36dp"
         android:layout_marginBottom="44dp"
-        android:text="a. Vender. "
+        android:text="a. Definitivamente no. "
         app:layout_constraintBottom_toTopOf="@+id/txtOption2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtOption3"
+        android:layout_width="317dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="232dp"
+        android:text="c. Sí. "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="108dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="144dp"
+        android:text="Respuesta:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -33,29 +56,30 @@
         android:layout_width="317dp"
         android:layout_height="36dp"
         android:layout_marginBottom="44dp"
-        android:text="b. No hacer nada. "
+        android:text="b. Tal vez. "
         app:layout_constraintBottom_toTopOf="@+id/txtOption3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintHorizontal_bias="0.436"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/txtOption3"
-        android:layout_width="317dp"
-        android:layout_height="36dp"
-        android:layout_marginBottom="280dp"
-        android:text="c. Comprar más. "
+    <EditText
+        android:id="@+id/txtAnswerPlay5"
+        android:layout_width="54dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="132dp"
+        android:ems="10"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.468"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.004"
+        app:layout_constraintStart_toEndOf="@+id/textView14" />
 
     <Button
-        android:id="@+id/btnNext2"
+        android:id="@+id/btnNextPlay5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="56dp"
-        android:onClick="add_question2"
+        android:onClick="add_question_play5"
         android:text="SIGUIENTE->"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,39 +91,15 @@
         android:layout_width="174dp"
         android:layout_height="37dp"
         android:layout_marginTop="76dp"
-        android:text="Pregunta 2"
+        android:text="Pregunta 5"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/txtQuestion2"
+        app:layout_constraintBottom_toTopOf="@+id/txtQPlay5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.135"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="108dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="192dp"
-        android:text="Respuesta:"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/txtAnswer2"
-        android:layout_width="54dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="184dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView14" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -111,6 +111,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.009"
-        app:srcCompat="@drawable/_680067" />
+        app:srcCompat="@drawable/_38527" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,58 +4,82 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FinanceProfile2">
+    tools:context=".FinanceProfile7">
 
     <TextView
-        android:id="@+id/txtQuestion2"
-        android:layout_width="323dp"
-        android:layout_height="86dp"
-        android:layout_marginBottom="24dp"
-        android:text="2. Su inversión se redujo un 20%, pero es parte de una cartera que se utiliza para cumplir con metas de inversión de tres diferentes horizontes temporales. ¿Qué haría usted si el objetivo era de cinco años? "
+        android:id="@+id/txtQuestion7"
+        android:layout_width="330dp"
+        android:layout_height="143dp"
+        android:layout_marginBottom="36dp"
+        android:text="7. Su empresa está vendiendo de acciones a los empleados. En tres años, la compañía planea vender al público la empresa. Hasta entonces, usted no será capaz de vender sus acciones y no recibirá dividendos. Sin embargo, su inversión podría multiplicarse por lo menos 10 veces cuando la empresa salga al público. ¿Qué cantidad de dinero invertiría? "
         app:layout_constraintBottom_toTopOf="@+id/txtOption1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.431"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/txtOption1"
-        android:layout_width="317dp"
-        android:layout_height="36dp"
-        android:layout_marginBottom="44dp"
-        android:text="a. Vender. "
-        app:layout_constraintBottom_toTopOf="@+id/txtOption2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintHorizontal_bias="0.456"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/txtOption2"
         android:layout_width="317dp"
         android:layout_height="36dp"
-        android:layout_marginBottom="44dp"
-        android:text="b. No hacer nada. "
+        android:layout_marginBottom="36dp"
+        android:text="b. Dos meses de sueldo. "
         app:layout_constraintBottom_toTopOf="@+id/txtOption3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="108dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="132dp"
+        android:text="Respuesta:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/txtOption3"
         android:layout_width="317dp"
         android:layout_height="36dp"
-        android:layout_marginBottom="280dp"
-        android:text="c. Comprar más. "
+        android:layout_marginBottom="220dp"
+        android:text="c. Cuatro meses de sueldo. "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtAnswer7"
+        android:layout_width="54dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="124dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toEndOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/txtOption1"
+        android:layout_width="317dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="52dp"
+        android:text="a. Nada. "
+        app:layout_constraintBottom_toTopOf="@+id/txtOption2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnNext2"
+        android:id="@+id/btnNext7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="56dp"
-        android:onClick="add_question2"
+        android:onClick="add_question7"
         android:text="SIGUIENTE->"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,39 +91,15 @@
         android:layout_width="174dp"
         android:layout_height="37dp"
         android:layout_marginTop="76dp"
-        android:text="Pregunta 2"
+        android:text="Pregunta 7"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/txtQuestion2"
+        app:layout_constraintBottom_toTopOf="@+id/txtQuestion7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.135"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="108dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="192dp"
-        android:text="Respuesta:"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/txtAnswer2"
-        android:layout_width="54dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="184dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView14" />
 
     <ImageView
         android:id="@+id/imageView8"

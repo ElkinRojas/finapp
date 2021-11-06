@@ -57,6 +57,13 @@ class MainPage : AppCompatActivity() {
             startActivity(intent)
         }
 
+        if (item.itemId == R.id.nav_item_three) {
+            //startActivity(Intent(this, ViewWord:: class.java))
+            var intent = Intent(this, ViewWord::class.java)
+            intent.putExtra("id", "4")
+            startActivity(intent)
+        }
+
         if (item.itemId == R.id.nav_item_glo) {
             startActivity(Intent(this, Glossary::class.java))
         }
@@ -66,9 +73,14 @@ class MainPage : AppCompatActivity() {
         }
 
         if (item.itemId == R.id.nav_item_seventeen) {
-            var intent = Intent(this, ViewWord::class.java)
-            intent.putExtra("id", intent.getStringExtra("id").toString())
+            val user = intent.getStringExtra("id").toString()
+            var intent = Intent(this, QuestionPlay::class.java)
+            intent.putExtra("user", user)
             startActivity(intent)
+        }
+
+        if (item.itemId == R.id.nav_item_logout) {
+            startActivity(Intent(this, MainActivity::class.java))
         }
 
         return super.onOptionsItemSelected(item)

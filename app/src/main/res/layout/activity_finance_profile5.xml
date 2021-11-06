@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FinanceProfile2">
+    tools:context=".FinanceProfile5">
 
     <TextView
-        android:id="@+id/txtQuestion2"
+        android:id="@+id/txtQuestion5"
         android:layout_width="323dp"
         android:layout_height="86dp"
         android:layout_marginBottom="24dp"
-        android:text="2. Su inversión se redujo un 20%, pero es parte de una cartera que se utiliza para cumplir con metas de inversión de tres diferentes horizontes temporales. ¿Qué haría usted si el objetivo era de cinco años? "
+        android:text="5. Acaba de ganar un gran premio en un concurso. ¿Cuál escogería? "
         app:layout_constraintBottom_toTopOf="@+id/txtOption1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.431"
@@ -22,7 +22,7 @@
         android:layout_width="317dp"
         android:layout_height="36dp"
         android:layout_marginBottom="44dp"
-        android:text="a. Vender. "
+        android:text="a. $2000 en efectivo, "
         app:layout_constraintBottom_toTopOf="@+id/txtOption2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.468"
@@ -33,7 +33,7 @@
         android:layout_width="317dp"
         android:layout_height="36dp"
         android:layout_marginBottom="44dp"
-        android:text="b. No hacer nada. "
+        android:text="b. Uno que gane $5000 (probabilidad del 50%)."
         app:layout_constraintBottom_toTopOf="@+id/txtOption3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.468"
@@ -44,18 +44,18 @@
         android:layout_width="317dp"
         android:layout_height="36dp"
         android:layout_marginBottom="280dp"
-        android:text="c. Comprar más. "
+        android:text="c. Uno que gane $15000 (probabilidad del 20%)."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.468"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnNext2"
+        android:id="@+id/btnNext5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="56dp"
-        android:onClick="add_question2"
+        android:onClick="add_question5"
         android:text="SIGUIENTE->"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,10 +67,10 @@
         android:layout_width="174dp"
         android:layout_height="37dp"
         android:layout_marginTop="76dp"
-        android:text="Pregunta 2"
+        android:text="Pregunta 5"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/txtQuestion2"
+        app:layout_constraintBottom_toTopOf="@+id/txtQuestion5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.135"
         app:layout_constraintStart_toStartOf="parent"
@@ -90,7 +90,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/txtAnswer2"
+        android:id="@+id/txtAnswer5"
         android:layout_width="54dp"
         android:layout_height="47dp"
         android:layout_marginBottom="184dp"

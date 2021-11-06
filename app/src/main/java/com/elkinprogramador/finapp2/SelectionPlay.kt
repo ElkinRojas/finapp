@@ -35,16 +35,15 @@ class SelectionPlay : AppCompatActivity() {
 
         //tblQuestion?.removeAllViews()
         var queue = Volley.newRequestQueue(this)
-        var url = "http://192.168.88.7/finapp/questions.php?type=2"
+        var url = "http://192.168.88.7/finapp/questions.php?type=2&user=1"
 
         var jsonObjectRequest = JsonObjectRequest(Request.Method.GET, url, null,
-            Response.Listener { response ->
+            Response.Listener { response2 ->
                 try {
-                    var jsonArray: JSONArray = response.getJSONArray("data")
+                    var jsonArray: JSONArray = response2.getJSONArray("data")
                     for (i in 0 until jsonArray.length()) {
                         var jsonObject = jsonArray.getJSONObject(i)
-                        val registro =
-                            LayoutInflater.from(this).inflate(R.layout.table_row_questions, null, false)
+                        val registro = LayoutInflater.from(this).inflate(R.layout.table_row_questions, null, false)
                         val txtQuestion = registro.findViewById<View>(R.id.txtQuestion) as TextView
                         val btnCheck = registro.findViewById<View>(R.id.btnCheck)
                         txtQuestion.text = jsonObject.getString("question")
@@ -55,7 +54,7 @@ class SelectionPlay : AppCompatActivity() {
                     e.printStackTrace()
                 }
             }, Response.ErrorListener { error ->
-
+                Toast.makeText(this, error.toString(), Toast.LENGTH_LONG).show()
             }
         )
 

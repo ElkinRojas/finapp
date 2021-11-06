@@ -13,6 +13,45 @@
         android:theme="@style/Theme.Finapp2"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".QuestionMessageFinal"
+            android:exported="true" />
+        <activity
+            android:name=".QuestionPlay5"
+            android:exported="true" />
+        <activity
+            android:name=".QuestionPlay4"
+            android:exported="true" />
+        <activity
+            android:name=".QuestionPlay3"
+            android:exported="true" />
+        <activity
+            android:name=".QuestionPlay2"
+            android:exported="true" />
+        <activity
+            android:name=".QuestionPlay"
+            android:exported="true" />
+        <activity
+            android:name=".FinanceProfile7"
+            android:exported="true" />
+        <activity
+            android:name=".FinanceProfileResult"
+            android:exported="true" />
+        <activity
+            android:name=".FinanceProfile6"
+            android:exported="true" />
+        <activity
+            android:name=".FinanceProfile5"
+            android:exported="true" />
+        <activity
+            android:name=".FinanceProfile4"
+            android:exported="true" />
+        <activity
+            android:name=".FinanceProfile3"
+            android:exported="true" />
+        <activity
+            android:name=".FinanceProfile2"
+            android:exported="true" />
+        <activity
             android:name=".FinanceProfile"
             android:exported="true" />
         <activity

@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FinanceProfile2">
+    tools:context=".FinanceProfile3">
 
     <TextView
-        android:id="@+id/txtQuestion2"
+        android:id="@+id/txtQuestion3"
         android:layout_width="323dp"
         android:layout_height="86dp"
         android:layout_marginBottom="24dp"
-        android:text="2. Su inversión se redujo un 20%, pero es parte de una cartera que se utiliza para cumplir con metas de inversión de tres diferentes horizontes temporales. ¿Qué haría usted si el objetivo era de cinco años? "
+        android:text="3. El precio de su inversión de retiro sube un 25% un mes después de haberla comprado. Si la información relevante no ha cambiado y tiene la posibilidad de hacer algo ¿qué haría?"
         app:layout_constraintBottom_toTopOf="@+id/txtOption1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.431"
@@ -22,7 +22,7 @@
         android:layout_width="317dp"
         android:layout_height="36dp"
         android:layout_marginBottom="44dp"
-        android:text="a. Vender. "
+        android:text="a. Venderlos y materializar sus ganancias. "
         app:layout_constraintBottom_toTopOf="@+id/txtOption2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.468"
@@ -33,7 +33,7 @@
         android:layout_width="317dp"
         android:layout_height="36dp"
         android:layout_marginBottom="44dp"
-        android:text="b. No hacer nada. "
+        android:text="b. No hacer nada, esperar que aumente más. "
         app:layout_constraintBottom_toTopOf="@+id/txtOption3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.468"
@@ -44,18 +44,18 @@
         android:layout_width="317dp"
         android:layout_height="36dp"
         android:layout_marginBottom="280dp"
-        android:text="c. Comprar más. "
+        android:text="c. Comprar más, podría ir más alto. "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.468"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnNext2"
+        android:id="@+id/btnNext3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="56dp"
-        android:onClick="add_question2"
+        android:onClick="add_question3"
         android:text="SIGUIENTE->"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,10 +67,10 @@
         android:layout_width="174dp"
         android:layout_height="37dp"
         android:layout_marginTop="76dp"
-        android:text="Pregunta 2"
+        android:text="Pregunta 3"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/txtQuestion2"
+        app:layout_constraintBottom_toTopOf="@+id/txtQuestion3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.135"
         app:layout_constraintStart_toStartOf="parent"
@@ -90,7 +90,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/txtAnswer2"
+        android:id="@+id/txtAnswer3"
         android:layout_width="54dp"
         android:layout_height="47dp"
         android:layout_marginBottom="184dp"

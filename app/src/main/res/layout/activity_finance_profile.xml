@@ -7,7 +7,7 @@
     tools:context=".FinanceProfile">
 
     <TextView
-        android:id="@+id/txtQuestion2"
+        android:id="@+id/txtQuestion1"
         android:layout_width="323dp"
         android:layout_height="78dp"
         android:layout_marginBottom="24dp"
@@ -51,7 +51,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnNext2"
+        android:id="@+id/btnNext1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="56dp"
@@ -70,7 +70,7 @@
         android:text="Pregunta 1"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/txtQuestion2"
+        app:layout_constraintBottom_toTopOf="@+id/txtQuestion1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.135"
         app:layout_constraintStart_toStartOf="parent"
@@ -90,7 +90,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/txtAnswer2"
+        android:id="@+id/txtAnswer1"
         android:layout_width="54dp"
         android:layout_height="47dp"
         android:layout_marginBottom="184dp"

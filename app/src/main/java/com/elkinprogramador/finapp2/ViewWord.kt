@@ -39,7 +39,11 @@ class ViewWord : AppCompatActivity() {
                 txtMean?.setText(response.getString("description"))
                 txtLink?.setText(response.getString("link"))
                 txtImageFoot?.setText(response.getString("photo"))
-                Picasso.get().load("${response.getString("photo")}").into(imageViewWord)
+                if ( id == "4" ) {
+                    Picasso.get().load(R.drawable._38527).into(imageViewWord)
+                } else {
+                    Picasso.get().load("${response.getString("photo")}").into(imageViewWord)
+                }
             }, Response.ErrorListener { error ->
                 Toast.makeText(this, error.toString(), Toast.LENGTH_LONG).show()
             }

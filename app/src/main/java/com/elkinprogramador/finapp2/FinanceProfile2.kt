@@ -13,46 +13,48 @@ import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 
 class FinanceProfile2 : AppCompatActivity() {
-    var txtQuestion1: TextView?=null
-    var txtAnswer1: EditText?=null
+    var txtQuestion2: TextView?=null
+    var txtAnswer2: EditText?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_finance_profile)
-        val id = intent.getStringExtra("id").toString()
-        txtQuestion1 = findViewById(R.id.txtQuestion2)
-        txtAnswer1 = findViewById(R.id.txtAnswer2)
+        setContentView(R.layout.activity_finance_profile2)
+        txtQuestion2 = findViewById(R.id.txtQuestion2)
+        txtAnswer2 = findViewById(R.id.txtAnswer2)
     }
 
-    fun clickLogin(view: View){
+    fun add_question2(view: View){
         var queue = Volley.newRequestQueue(this)
         val url = "http://192.168.88.7/finapp/add_question.php"
+        val user = intent.getStringExtra("user").toString()
         //Toast.makeText(this, url, Toast.LENGTH_LONG).show()
 
-        val resultadoPost = object : StringRequest(Request.Method.POST, url,
-            Response.Listener { response ->
-                if ( response == "El registro se inserto de forma exitosa" ) {
-                    if (txtAnswer1?.text.toString() != "" || txtAnswer1?.text.toString() != null) {
-                        var intent = Intent(this, MainPage::class.java)
+        if ( txtAnswer2?.text.toString() == "a" || txtAnswer2?.text.toString() == "b" || txtAnswer2?.text.toString() == "c" ) {
+            val resultadoPost = object : StringRequest(Request.Method.POST, url,
+                Response.Listener { response ->
+                    if ( response == "El registro se inserto de forma exitosa" ) {
+                        var intent = Intent(this, FinanceProfile3::class.java)
+                        intent.putExtra("user", user)
                         startActivity(intent)
                     } else {
-                        Toast.makeText(this,"Debe responder esta pregunta para poder continuar",Toast.LENGTH_LONG).show()
+                        Toast.makeText(this,"Se presento un error desconocido en la aplicación",
+                            Toast.LENGTH_LONG).show()
                     }
-                } else {
-                    Toast.makeText(this,"Se presento un error desconocido en la aplicación",Toast.LENGTH_LONG).show()
+                    //Toast.makeText(this, response, Toast.LENGTH_LONG).show()
+                }, Response.ErrorListener { error ->
+                    Toast.makeText(this, "$error", Toast.LENGTH_LONG).show()
+                }) {
+                override fun getParams(): MutableMap<String, String> {
+                    val parametros = HashMap<String, String>()
+                    parametros.put("question", txtQuestion2?.text.toString())
+                    parametros.put("answer", txtAnswer2?.text.toString())
+                    parametros.put("user", user)
+                    parametros.put("type", "1")
+                    return parametros
                 }
-                //Toast.makeText(this, response, Toast.LENGTH_LONG).show()
-            }, Response.ErrorListener { error ->
-                Toast.makeText(this, "$error", Toast.LENGTH_LONG).show()
-            }) {
-            override fun getParams(): MutableMap<String, String> {
-                val parametros = HashMap<String, String>()
-                parametros.put("question", txtQuestion1?.text.toString())
-                parametros.put("answer", txtAnswer1?.text.toString())
-                parametros.put("id", intent.getStringExtra("id").toString())
-                parametros.put("type", "1")
-                return parametros
             }
+            queue.add(resultadoPost)
+        } else {
+            Toast.makeText(this,"Solo se permiten tres opciones de respuesta (a,b,c)", Toast.LENGTH_LONG).show()
         }
-        queue.add(resultadoPost)
     }
 }

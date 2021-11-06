@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinanceProfile4">
+
+    <TextView
+        android:id="@+id/txtOption1"
+        android:layout_width="314dp"
+        android:layout_height="81dp"
+        android:layout_marginBottom="48dp"
+        android:text="a. Invertir en un fondo del mercado monetario o fondos garantizados de inversión, renunciando a la posibilidad de mayores ganancias, pero prácticamente asegurando el capital. "
+        app:layout_constraintBottom_toTopOf="@+id/txtOption2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="108dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="116dp"
+        android:text="Respuesta:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtAnswer4"
+        android:layout_width="54dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="104dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintStart_toEndOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/txtOption3"
+        android:layout_width="311dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="180dp"
+        android:text="c. Invertir en fondos mutuos agresivos cuyo valor es probable que fluctúen de forma significativa durante el año, pero tienen el potencial para los aumentos impresionantes de cinco a diez años."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtQuestion4"
+        android:layout_width="322dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="20dp"
+        android:text="4. Usted está invirtiendo para su jubilación, que es a 15 años. ¿Qué prefiere hacer?"
+        app:layout_constraintBottom_toTopOf="@+id/txtOption1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtOption2"
+        android:layout_width="315dp"
+        android:layout_height="83dp"
+        android:layout_marginBottom="40dp"
+        android:text="b. Invertir en una mezcla de 50-50 de los fondos de bonos y acciones, esperando conseguir algún crecimiento del capital, pero protegiendo de alguna forma un ingreso fijo, "
+        app:layout_constraintBottom_toTopOf="@+id/txtOption3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNext4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:onClick="add_question4"
+        android:text="SIGUIENTE->"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="174dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="76dp"
+        android:text="Pregunta 4"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtQuestion4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="108dp"
+        android:layout_height="107dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.834"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009"
+        app:srcCompat="@drawable/_680067" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
