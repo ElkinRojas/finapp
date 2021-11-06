@@ -64,6 +64,27 @@ class MainPage : AppCompatActivity() {
             startActivity(intent)
         }
 
+        if (item.itemId == R.id.nav_item_four) {
+            //startActivity(Intent(this, ViewWord:: class.java))
+            var intent = Intent(this, ViewWord::class.java)
+            intent.putExtra("id", "5")
+            startActivity(intent)
+        }
+
+        if (item.itemId == R.id.nav_item_five) {
+            //startActivity(Intent(this, ViewWord:: class.java))
+            var intent = Intent(this, ViewWord::class.java)
+            intent.putExtra("id", "6")
+            startActivity(intent)
+        }
+
+        if (item.itemId == R.id.nav_item_rec) {
+            //startActivity(Intent(this, ViewWord:: class.java))
+            var intent = Intent(this, ViewWord::class.java)
+            intent.putExtra("id", "7")
+            startActivity(intent)
+        }
+
         if (item.itemId == R.id.nav_item_glo) {
             startActivity(Intent(this, Glossary::class.java))
         }

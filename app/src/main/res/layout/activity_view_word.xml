@@ -8,10 +8,11 @@
 
     <TextView
         android:id="@+id/txtTittle"
-        android:layout_width="382dp"
-        android:layout_height="69dp"
+        android:layout_width="376dp"
+        android:layout_height="33dp"
         android:textAlignment="center"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -40,22 +41,29 @@
         app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/txtMean"
-        android:layout_width="372dp"
-        android:layout_height="199dp"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="361dp"
+        android:layout_height="280dp"
+        android:animateLayoutChanges="true"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintHorizontal_bias="0.68"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTittle"
-        app:layout_constraintVertical_bias="0.954" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.762">
+
+        <TextView
+            android:id="@+id/txtMean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
 
     <ImageView
         android:id="@+id/imageViewWord"
-        android:layout_width="255dp"
-        android:layout_height="291dp"
+        android:layout_width="348dp"
+        android:layout_height="256dp"
         android:layout_marginTop="12dp"
         android:clickable="true"
         android:onClick="clickZoomImage"
@@ -69,13 +77,14 @@
         android:id="@+id/txtImageFoot"
         android:layout_width="362dp"
         android:layout_height="20dp"
-        android:layout_marginBottom="16dp"
         android:autoLink="web"
         android:linksClickable="true"
         android:textSize="8sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtMean"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.346"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.367"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.434" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
