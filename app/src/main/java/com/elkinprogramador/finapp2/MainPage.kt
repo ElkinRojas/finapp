@@ -43,17 +43,18 @@ class MainPage : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.nav_item_one) {
-            //startActivity(Intent(this, ViewWord:: class.java))
-            var intent = Intent(this, ViewWord::class.java)
-            intent.putExtra("id", "3")
-            startActivity(intent)
-        }
 
         if (item.itemId == R.id.nav_item_two) {
             val user = intent.getStringExtra("id").toString()
             var intent = Intent(this, FinanceProfile::class.java)
             intent.putExtra("user", user)
+            startActivity(intent)
+        }
+
+        if (item.itemId == R.id.nav_item_one) {
+            //startActivity(Intent(this, ViewWord:: class.java))
+            var intent = Intent(this, ViewWord::class.java)
+            intent.putExtra("id", "3")
             startActivity(intent)
         }
 
@@ -82,6 +83,41 @@ class MainPage : AppCompatActivity() {
             //startActivity(Intent(this, ViewWord:: class.java))
             var intent = Intent(this, ViewWord::class.java)
             intent.putExtra("id", "7")
+            startActivity(intent)
+        }
+
+        if (item.itemId == R.id.nav_item_eleven) {
+            //startActivity(Intent(this, ViewWord:: class.java))
+            var intent = Intent(this, ViewWord::class.java)
+            intent.putExtra("id", "8")
+            startActivity(intent)
+        }
+
+        if (item.itemId == R.id.nav_item_twenty) {
+            //startActivity(Intent(this, ViewWord:: class.java))
+            var intent = Intent(this, ViewWord::class.java)
+            intent.putExtra("id", "9")
+            startActivity(intent)
+        }
+
+        if (item.itemId == R.id.nav_item_threeteen) {
+            //startActivity(Intent(this, ViewWord:: class.java))
+            var intent = Intent(this, ViewWord::class.java)
+            intent.putExtra("id", "10")
+            startActivity(intent)
+        }
+
+        if (item.itemId == R.id.nav_item_fourteen) {
+            //startActivity(Intent(this, ViewWord:: class.java))
+            var intent = Intent(this, ViewWord::class.java)
+            intent.putExtra("id", "11")
+            startActivity(intent)
+        }
+
+        if (item.itemId == R.id.nav_item_fiveteen) {
+            //startActivity(Intent(this, ViewWord:: class.java))
+            var intent = Intent(this, ViewWord::class.java)
+            intent.putExtra("id", "12")
             startActivity(intent)
         }
 

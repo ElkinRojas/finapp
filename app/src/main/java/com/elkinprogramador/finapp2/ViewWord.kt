@@ -41,6 +41,8 @@ class ViewWord : AppCompatActivity() {
                 txtImageFoot?.setText(response.getString("photo"))
                 if ( id == "6" ) {
                     Picasso.get().load(R.drawable.captura2).into(imageViewWord)
+                } else if ( id == "10" ) {
+                    Picasso.get().load(R.drawable.captura34).into(imageViewWord)
                 } else {
                     Picasso.get().load("${response.getString("photo")}").into(imageViewWord)
                 }
