@@ -28,7 +28,7 @@ class QuestionPlay : AppCompatActivity() {
         val user = intent.getStringExtra("user").toString()
         //Toast.makeText(this, url, Toast.LENGTH_LONG).show()
 
-        if ( txtAnswerPlay1?.text.toString() == "a" ) {
+        if ( txtAnswerPlay1?.text.toString() == "b" ) {
             val resultadoPost = object : StringRequest(Request.Method.POST, url,
                 Response.Listener { response ->
                     if ( response == "El registro se inserto de forma exitosa" ) {

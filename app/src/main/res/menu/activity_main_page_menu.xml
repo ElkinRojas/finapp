@@ -22,13 +22,16 @@
                 android:title="Para que sirve"/>
             <item android:id="@+id/nav_item_eight"
                 android:icon="@drawable/ic_menu_camera"
-                android:title="Procedimiento"/>
-            <item android:id="@+id/nav_item_nine"
+                android:title="Consideraciones"/>
+            <item android:id="@+id/nav_item_ten"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Para quien?"/>
+            <item android:id="@+id/nav_item_nine1"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="Recomendaciones"/>
+            <item android:id="@+id/nav_item_nine2"
                 android:icon="@drawable/ic_menu_gallery"
                 android:title="Lecturas"/>
-            <item android:id="@+id/nav_item_ten"
-                android:icon="@drawable/ic_menu_camera"
-                android:title="Quien lo hace?"/>
         </menu>
     </item>
 
@@ -69,10 +72,24 @@
         </menu>
     </item>
 
+    <item android:title="GRAFFITI FIN">
+        <menu>
+            <item android:id="@+id/nav_item_gra1"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Graffiti 1"/>
+            <item android:id="@+id/nav_item_gra2"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="Graffiti 2"/>
+            <item android:id="@+id/nav_item_gra3"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Graffiti 3"/>
+            <item android:id="@+id/nav_item_gra4"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Graffiti 4"/>
+        </menu>
+    </item>
+
     <group>
-        <item android:id="@+id/nav_item_gra"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="GRAFFITI"/>
         <item android:id="@+id/nav_item_glo"
             android:icon="@drawable/ic_menu_camera"
             android:title="GLOSARIO"/>

@@ -39,10 +39,20 @@ class ViewWord : AppCompatActivity() {
                 txtMean?.setText(response.getString("description"))
                 txtLink?.setText(response.getString("link"))
                 txtImageFoot?.setText(response.getString("photo"))
-                if ( id == "6" ) {
+                if ( id == "4" ) {
+                    Picasso.get().load(R.drawable.capturapp).into(imageViewWord)
+                } else if ( id == "6" ) {
                     Picasso.get().load(R.drawable.captura2).into(imageViewWord)
                 } else if ( id == "10" ) {
                     Picasso.get().load(R.drawable.captura34).into(imageViewWord)
+                } else if ( id == "19" ) {
+                    Picasso.get().load(R.drawable.gra1).into(imageViewWord)
+                } else if ( id == "20" ) {
+                    Picasso.get().load(R.drawable.grafiti2).into(imageViewWord)
+                } else if ( id == "21" ) {
+                    Picasso.get().load(R.drawable.gra3).into(imageViewWord)
+                } else if ( id == "22" ) {
+                    Picasso.get().load(R.drawable.gra4).into(imageViewWord)
                 } else {
                     Picasso.get().load("${response.getString("photo")}").into(imageViewWord)
                 }

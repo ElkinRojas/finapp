@@ -59,63 +59,114 @@ class MainPage : AppCompatActivity() {
         }
 
         if (item.itemId == R.id.nav_item_three) {
-            //startActivity(Intent(this, ViewWord:: class.java))
             var intent = Intent(this, ViewWord::class.java)
             intent.putExtra("id", "4")
             startActivity(intent)
         }
 
         if (item.itemId == R.id.nav_item_four) {
-            //startActivity(Intent(this, ViewWord:: class.java))
             var intent = Intent(this, ViewWord::class.java)
             intent.putExtra("id", "5")
             startActivity(intent)
         }
 
+        if (item.itemId == R.id.nav_item_six) {
+            var intent = Intent(this, ViewWord::class.java)
+            intent.putExtra("id", "13")
+            startActivity(intent)
+        }
+
+        if (item.itemId == R.id.nav_item_seven) {
+            var intent = Intent(this, ViewWord::class.java)
+            intent.putExtra("id", "14")
+            startActivity(intent)
+        }
+
+        if (item.itemId == R.id.nav_item_eight) {
+            var intent = Intent(this, ViewWord::class.java)
+            intent.putExtra("id", "15")
+            startActivity(intent)
+        }
+
+        if (item.itemId == R.id.nav_item_ten) {
+            var intent = Intent(this, ViewWord::class.java)
+            intent.putExtra("id", "16")
+            startActivity(intent)
+        }
+
+        if (item.itemId == R.id.nav_item_nine1) {
+            var intent = Intent(this, ViewWord::class.java)
+            intent.putExtra("id", "17")
+            startActivity(intent)
+        }
+
+        if (item.itemId == R.id.nav_item_nine2) {
+            var intent = Intent(this, ViewWord::class.java)
+            intent.putExtra("id", "18")
+            startActivity(intent)
+        }
+
+        if (item.itemId == R.id.nav_item_gra1) {
+            var intent = Intent(this, ViewWord::class.java)
+            intent.putExtra("id", "19")
+            startActivity(intent)
+        }
+
+        if (item.itemId == R.id.nav_item_gra2) {
+            var intent = Intent(this, ViewWord::class.java)
+            intent.putExtra("id", "20")
+            startActivity(intent)
+        }
+
+        if (item.itemId == R.id.nav_item_gra3) {
+            var intent = Intent(this, ViewWord::class.java)
+            intent.putExtra("id", "21")
+            startActivity(intent)
+        }
+
+        if (item.itemId == R.id.nav_item_gra4) {
+            var intent = Intent(this, ViewWord::class.java)
+            intent.putExtra("id", "22")
+            startActivity(intent)
+        }
+
         if (item.itemId == R.id.nav_item_five) {
-            //startActivity(Intent(this, ViewWord:: class.java))
             var intent = Intent(this, ViewWord::class.java)
             intent.putExtra("id", "6")
             startActivity(intent)
         }
 
         if (item.itemId == R.id.nav_item_rec) {
-            //startActivity(Intent(this, ViewWord:: class.java))
             var intent = Intent(this, ViewWord::class.java)
             intent.putExtra("id", "7")
             startActivity(intent)
         }
 
         if (item.itemId == R.id.nav_item_eleven) {
-            //startActivity(Intent(this, ViewWord:: class.java))
             var intent = Intent(this, ViewWord::class.java)
             intent.putExtra("id", "8")
             startActivity(intent)
         }
 
         if (item.itemId == R.id.nav_item_twenty) {
-            //startActivity(Intent(this, ViewWord:: class.java))
             var intent = Intent(this, ViewWord::class.java)
             intent.putExtra("id", "9")
             startActivity(intent)
         }
 
         if (item.itemId == R.id.nav_item_threeteen) {
-            //startActivity(Intent(this, ViewWord:: class.java))
             var intent = Intent(this, ViewWord::class.java)
             intent.putExtra("id", "10")
             startActivity(intent)
         }
 
         if (item.itemId == R.id.nav_item_fourteen) {
-            //startActivity(Intent(this, ViewWord:: class.java))
             var intent = Intent(this, ViewWord::class.java)
             intent.putExtra("id", "11")
             startActivity(intent)
         }
 
         if (item.itemId == R.id.nav_item_fiveteen) {
-            //startActivity(Intent(this, ViewWord:: class.java))
             var intent = Intent(this, ViewWord::class.java)
             intent.putExtra("id", "12")
             startActivity(intent)

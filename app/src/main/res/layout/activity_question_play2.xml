@@ -11,7 +11,7 @@
         android:layout_width="329dp"
         android:layout_height="105dp"
         android:layout_marginBottom="52dp"
-        android:text="El siguiente significado “es un sistema que permite examinar y predecir los movimientos de precios en los mercados financieros a partir de datos históricos y estadísticas de mercado” es la:"
+        android:text="El siguiente significado “es un sistema que permite examinar y predecir los movimientos de precios en los mercados financieros a partir de datos históricos y estadísticas de mercado” es la: "
         app:layout_constraintBottom_toTopOf="@+id/txtOption1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.39"
