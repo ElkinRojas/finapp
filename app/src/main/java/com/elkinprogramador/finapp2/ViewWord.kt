@@ -50,9 +50,9 @@ class ViewWord : AppCompatActivity() {
                 } else if ( id == "20" ) {
                     Picasso.get().load(R.drawable.grafiti2).into(imageViewWord)
                 } else if ( id == "21" ) {
-                    Picasso.get().load(R.drawable.gra3).into(imageViewWord)
+                    Picasso.get().load(R.drawable.vvvvvv).into(imageViewWord)
                 } else if ( id == "22" ) {
-                    Picasso.get().load(R.drawable.gra4).into(imageViewWord)
+                    Picasso.get().load(R.drawable.rrrrrr).into(imageViewWord)
                 } else {
                     Picasso.get().load("${response.getString("photo")}").into(imageViewWord)
                 }

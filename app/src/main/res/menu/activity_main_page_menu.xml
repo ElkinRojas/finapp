@@ -89,12 +89,6 @@
         </menu>
     </item>
 
-    <group>
-        <item android:id="@+id/nav_item_glo"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="GLOSARIO"/>
-    </group>
-
     <item android:title="PARA APRENDER">
         <menu>
             <item android:id="@+id/nav_item_sixteen"
@@ -103,6 +97,9 @@
             <item android:id="@+id/nav_item_seventeen"
                 android:icon="@drawable/ic_menu_gallery"
                 android:title="Preguntas"/>
+            <item android:id="@+id/nav_item_glo"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="GLOSARIO"/>
         </menu>
     </item>
 
